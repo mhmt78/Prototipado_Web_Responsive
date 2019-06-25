@@ -1,0 +1,66 @@
+// bower:scss
+// endbower
+@import'menu';
+
+
+$cardImageHeight: 350px;
+$textBackground: rgba(0,0,0,0.5);
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.mainContent{
+  padding-left: 300px;
+  @media screen and (max-width: 992px){
+    padding-left: 0px;
+  }
+}
+.page-title{ 
+  padding-left: 20px;
+  font-style: 24px;
+  @media screen and (max-width: 360px){
+    font-size: 16px;
+  }
+}
+.footer-copyright{
+  padding-left: 20px!important;
+  color: white;
+  line-height: 20px!important;
+  margin-bottom: 0px!important;
+  min-height: 60px!important;
+  height: auto!important;
+}
+.cardImage{
+  card-image{
+    img{
+      height: $cardImageHeight;
+    }
+  }
+}
+.card-title{
+  .text-title{
+    background-color: $textBackground;
+  }
+}
+.inputSlider{
+  height: auto!important;
+}
+.filterSliders{
+  .range-label{
+    background-color: grey!important;
+  }
+  .noUi-handle{
+    background-color: grey!important;
+  }
+}
+.searchFilter{
+  height: 45px!important;
+}
+.competitorKPI{
+  font-size: 26px;
+}
+.competitorTitle{
+  font-size: 16px;  
+}

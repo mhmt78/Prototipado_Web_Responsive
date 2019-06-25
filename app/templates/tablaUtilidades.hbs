@@ -1,0 +1,44 @@
+<table class="bordered responsive-table">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Concepto</th>
+			<th>Valor Unitario</th>
+			<th>Cantidad</th>
+			<th>Valor Total</th>
+			<th>Periodo</th>
+			<th>Porcentaje</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each utilidades}}
+		<tr>
+			<td>
+				<input type="checkbox" name="productSelection"/>
+				<label for="productSelection"></label>
+				<label>
+					<input type="checkbox" />
+						<span></span>
+				</label>
+			</td>
+			<td>{{concepto}}</td>
+			<td>{{unitario}}</td>
+			<td>{{cantidad}}</td>
+			<td>{{total}}</td>
+			<td>{{periodo}}</td>
+			<td>{{porcentaje}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+	<tfoot>
+		<tr>
+			<th></th>
+			<th>Utilidad</th>
+			<th>S/50.00</th>
+			<th></th>
+			<th>S/25,000.00</th>
+			<th></th>
+			<th>50%</th>
+		</tr>
+	</tfoot>
+</table>

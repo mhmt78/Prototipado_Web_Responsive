@@ -1,0 +1,12 @@
+<ul id="sideMenu" class="side-nav fixed">
+	<li>
+		<div class="userView grey darken-3">
+			<span class="white-text email">Empresa Metalmecanica</span>
+		</div>
+	</li>
+	{{#each menuItems}}
+		<li>
+			<a href="#" onclick="changeState('{{state}}')" id="{{state}}Link" class="menuLinks">{{item}}</a>
+		</li>
+	{{/each}}
+</ul>

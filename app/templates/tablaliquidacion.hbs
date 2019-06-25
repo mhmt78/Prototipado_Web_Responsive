@@ -1,0 +1,36 @@
+<table class="bordered responsive-table">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Trabajador</th>
+			<th>Salario</th>
+			<th>Transporte</th>
+			<th>Comision</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each liquidacion}}
+		<tr>
+			<td>
+				<input type="checkbox" name="productSelection"/>
+				<label for="productSelection"></label>
+				<label>
+					<input type="checkbox" />
+						<span></span>
+				</label>
+			</td>
+			<td>{{trabajador}}</td>
+			<td>{{salario}}</td>
+			<td>{{auxilio}}</td>
+			<td>{{comision}}</td>
+			<td>{{total}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+	<tfoot>
+		<tr>
+			
+		</tr>
+	</tfoot>
+</table>

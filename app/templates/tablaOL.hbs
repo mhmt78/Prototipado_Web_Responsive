@@ -1,0 +1,31 @@
+<table class="bordered responsive-table">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Concepto</th>
+			<th>A cargo del empleador</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each obligaciones}}
+		<tr>
+			<td>
+				<input type="checkbox" name="productSelection"/>
+				<label for="productSelection"></label>
+				<label>
+					<input type="checkbox" />
+						<span></span>
+				</label>
+			</td>
+			<td>{{concepto}}</td>
+			<td>{{porcentaje}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+			<th>Total a cargo del empleador 24.03%</th>
+		</tr>
+	</tfoot>
+</table>
